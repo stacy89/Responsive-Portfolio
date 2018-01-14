@@ -26,7 +26,6 @@ body {
 #logo {
   float: left;
   width: 250px;
-  height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
@@ -56,15 +55,14 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-h1 {
-	position: absolute;
+/*h1 {
 	margin-left: 180px;
 	background-color: teal;
 	color: white;
 	padding: 35px;
 	margin-top: -16px; 
 	font-family: 'Georgia', Times, Times New Roman, serif;
-}
+}*/
 
 h3 {
 	color: teal;
@@ -112,9 +110,6 @@ footer {
 	float: left;
 	left: 0;
 	padding-right: 20px;
-}
-
-.aboutImage {
 	width: 300px;
 	height: 200px;
 }
@@ -124,7 +119,7 @@ footer {
 	height: 200px;
 }
 
-.inconLinks {
+.iconLinks {
 background-color: white;
 float: left;
 border: solid #dddddd;
@@ -304,6 +299,63 @@ padding: 30px 30px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 980px, 768px, 640px) {
-     
+@media only screen and (max-width: 980px) {	
+
+	.iconLinks {
+		width: 590px;
+		margin-left: 180px;
+	} 
+	
+	nav {
+		float: left;
+		display: block;
+	} 
+}
+
+@media only screen and (max-width: 768px) {	
+
+	nav {
+		float: left;
+	} 
+
+	.portfolioImg, .monsterText,
+	.siameseText, .dariaText, .dougText,
+	.renStimpyText, .rockoText {
+		margin: 20px
+	}
+
+	.iconLinks {
+		width: 50%;
+		margin: 100px;
+	}    
+
+	.aboutMe, .portfolio, .form {
+		width: 50%;
+		margin: 100px;
+	}
+}
+
+@media only screen and (max-width: 640px) {	
+	.portfolioImg {
+		margin: 20px;
+	}
+
+	nav {
+		float: left;
+	/*	display: block;*/
+	}
+
+	.iconLinks {
+		width: 50%;
+		margin: 100px;
+	}  
+
+	.aboutMe, .portfolio, .form {
+		width: 50%;
+		margin: 100px;
+	}  
+
+	.aboutImage {
+		width: 50%;
+	}
 }
