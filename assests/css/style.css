@@ -9,8 +9,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
-  margin-left: 180px;
+  /*max-width: 960px;*/
+  /*margin-left: 180px;*/
   clear: both;
 }
 
@@ -24,6 +24,7 @@ body {
 }
 
 #logo {
+	margin-left: 180px;
   float: left;
   width: 250px;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -39,6 +40,7 @@ body {
 nav {
 	float: right;
 	margin-top: 25px;
+	margin-right: 230px;
 }
 
 nav a {
@@ -314,9 +316,9 @@ padding: 30px 30px;
 
 @media only screen and (max-width: 768px) {	
 
-	nav {
+	/*nav {
 		float: left;
-	} 
+	} */
 
 	.portfolioImg, .monsterText,
 	.siameseText, .dariaText, .dougText,
@@ -324,8 +326,16 @@ padding: 30px 30px;
 		margin: 20px
 	}
 
+	nav {
+		margin-left: 70px;
+	}
+
+	#logo {
+		margin-left: 100px;
+	}
+
 	.iconLinks {
-		width: 50%;
+		width: 45%;
 		margin: 100px;
 	}    
 
@@ -341,12 +351,16 @@ padding: 30px 30px;
 	}
 
 	nav {
-		float: left;
-	/*	display: block;*/
+		margin-left: 70px;
+	}
+
+	#logo {
+		margin-left: 10%;
+		margin-left: 100px;
 	}
 
 	.iconLinks {
-		width: 50%;
+		width: 45%;
 		margin: 100px;
 	}  
 
